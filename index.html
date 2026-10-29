@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Aapka main content yahan aayega -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Financial Calculator</h1>
+        <p>Loan Interest Calculator</p>
+
+        <label>Principal Amount (₹)</label>
+        <input type="number" id="principal" placeholder="e.g. 500000" value="500000">
+
+        <label>Monthly Interest per ₹100</label>
+        <select id="rate">
+            <option value="1">₹1 per ₹100 (1%)</option>
+            <option value="1.5">₹1.50 per ₹100 (1.5%)</option>
+            <option value="2" selected>₹2 per ₹100 (2%)</option>
+            <option value="2.5">₹2.50 per ₹100 (2.5%)</option>
+            <option value="3">₹3 per ₹100 (3%)</option>
+        </select>
+
+        <label>Time Period</label>
+        <select id="period">
+            <option value="1">1 Month</option>
+            <option value="6">6 Months</option>
+            <option value="12" selected>1 Year</option>
+            <option value="24">2 Years</option>
+            <option value="36">3 Years</option>
+            <option value="48">4 Years</option>
+            <option value="60">5 Years</option>
+        </select>
+
+        <label>Interest Type</label>
+        <select id="interestType">
+            <option value="simple">Simple Interest</option>
+            <option value="compound">Compound Interest (Monthly)</option>
+        </select>
+
+        <button onclick="calculateInterest()">Calculate Interest</button>
+
+        <div class="result">
+            <p>Monthly Interest: <strong id="monthly">₹0</strong></p>
+            <p>Total Interest: <strong id="interest">₹0</strong></p>
+            <p>Total Amount: <strong id="total">₹0</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
